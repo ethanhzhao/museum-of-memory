@@ -38,49 +38,49 @@ const FADE_DURATION = 1000; //1 second for fade
 const FADE_DELAY_DURATION = 2000;
 
 function preload() {
-    titleImg = loadImage('/images/titlespritesheet.png')
-    playerImg = loadImage('/images/walkingspritesheet.png');
-    shadowImg = loadImage('/images/shadow.png')
-    doorImg = loadImage('/images/doorspritesheet.png');
-    brainImg = loadImage('/images/braintile.png');
+    titleImg = loadImage('./images/titlespritesheet.png')
+    playerImg = loadImage('./images/walkingspritesheet.png');
+    shadowImg = loadImage('./images/shadow.png')
+    doorImg = loadImage('./images/doorspritesheet.png');
+    brainImg = loadImage('./images/braintile.png');
 
-    mirrorBkgdImg = loadImage('images/mirrorBkgd.png');
-    mirrorImg = loadImage('images/mirror.png');
-    mirror_reflectImg = loadImage('images/mirror_reflect.png');
+    mirrorBkgdImg = loadImage('./images/mirrorBkgd.png');
+    mirrorImg = loadImage('./images/mirror.png');
+    mirror_reflectImg = loadImage('./images/mirror_reflect.png');
 
-    clothes1Img = loadImage('/images/clothes1.png');
-    clothes1_noImg = loadImage('/images/clothes1_no.png');
-    clothes2Img = loadImage('/images/clothes2.png');
-    clothes2_noImg = loadImage('/images/clothes2_no.png');
-    clothes3Img = loadImage('/images/clothes3.png');
-    clothes3_noImg = loadImage('/images/clothes3_no.png');
-    clothes4Img = loadImage('/images/clothes4.png');
-    clothes4_noImg = loadImage('/images/clothes4_no.png');
-    clothes5Img = loadImage('/images/clothes5.png');
-    clothes5_noImg = loadImage('/images/clothes5_no.png');
+    clothes1Img = loadImage('./images/clothes1.png');
+    clothes1_noImg = loadImage('./images/clothes1_no.png');
+    clothes2Img = loadImage('./images/clothes2.png');
+    clothes2_noImg = loadImage('./images/clothes2_no.png');
+    clothes3Img = loadImage('./images/clothes3.png');
+    clothes3_noImg = loadImage('./images/clothes3_no.png');
+    clothes4Img = loadImage('./images/clothes4.png');
+    clothes4_noImg = loadImage('./images/clothes4_no.png');
+    clothes5Img = loadImage('./images/clothes5.png');
+    clothes5_noImg = loadImage('./images/clothes5_no.png');
 
-    speechBubbleMad = loadImage('/images/speechBubbleMad.png');
-    speechBubbleThumbsDown = loadImage('/images/speechBubbleThumbsDown.png');
-    speechBubbleHeartbreak = loadImage('/images/speechBubbleHeartbreak.png');
+    speechBubbleMad = loadImage('./images/speechBubbleMad.png');
+    speechBubbleThumbsDown = loadImage('./images/speechBubbleThumbsDown.png');
+    speechBubbleHeartbreak = loadImage('./images/speechBubbleHeartbreak.png');
 
-    speechBubble1 = loadImage('/images/speechBubble1.png');
-    speechBubble2 = loadImage('/images/speechBubble2.png');
-    speechBubble3 = loadImage('/images/speechBubble3.png');
-    speechBubble4 = loadImage('/images/speechBubble4.png');
-    speechBubble5 = loadImage('/images/speechBubble5.png');
+    speechBubble1 = loadImage('./images/speechBubble1.png');
+    speechBubble2 = loadImage('./images/speechBubble2.png');
+    speechBubble3 = loadImage('./images/speechBubble3.png');
+    speechBubble4 = loadImage('./images/speechBubble4.png');
+    speechBubble5 = loadImage('./images/speechBubble5.png');
 
-    bathroomPeopleImg = loadImage('/images/bathroompplspritesheet.png');
-    toiletsImg = loadImage('/images/toilets.png');
-    toiletOpenImg = loadImage('/images/toilet_open.png');
-    toiletClosedImg = loadImage('/images/toilet_closed.png');
-    sinksImg = loadImage('/images/sinks.png');
+    bathroomPeopleImg = loadImage('./images/bathroompplspritesheet.png');
+    toiletsImg = loadImage('./images/toilets.png');
+    toiletOpenImg = loadImage('./images/toilet_open.png');
+    toiletClosedImg = loadImage('./images/toilet_closed.png');
+    sinksImg = loadImage('./images/sinks.png');
 
-    floorTexture = loadImage('placeholdertexture.jpeg');
-    wallTexture = loadImage('/images/mazewall.png');
+    floorTexture = loadImage('./placeholdertexture.jpeg');
+    wallTexture = loadImage('./images/mazewall.png');
 
     finalImg = loadImage('/images/final.gif');
 
-    font = loadFont('pixely.ttf')
+    font = loadFont('./pixely.ttf')
 }
 
 function setup() {
@@ -305,4 +305,5 @@ function drawFade() {
             switchToScene(fadeTargetScene);
         }
     }
+
 }
