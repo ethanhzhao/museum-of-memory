@@ -22,11 +22,13 @@ function drawFinalScene() {
         let gifH = 300;
         let gifX = width / 2 - gifW / 2;
         let gifY = height / 2 - gifH / 2;
-        
-        push();
-        imageMode(CORNER);
-        image(finalImg, gifX, gifY, gifW, gifH);
-        pop();
+
+        if (finalImg) {
+            push();
+            imageMode(CORNER);
+            image(finalImg, gifX, gifY, gifW, gifH);
+            pop();
+        }
 
         push();
         fill(255); // White text
@@ -65,4 +67,5 @@ function mouseClickedFinalScene() {
         
         triggerFade('start', 500, 0, true); // Fade out
     }
+
 }
