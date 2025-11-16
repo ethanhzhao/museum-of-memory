@@ -85,8 +85,6 @@ function preload() {
 
 function setup() {
     p5Canvas = createCanvas(windowWidth, windowHeight, P2D);
-    // Start with the 2D intro scene
-    // This function (setupIntro) is defined in introScene.js
     
     setupLevelSelectScene();
     document.addEventListener('pointerlockchange', () => {
@@ -97,8 +95,6 @@ function setup() {
 
 function draw() {
     //console.log(currentScene);
-    // These functions (drawIntro, drawMaze) are
-    // defined in their own scene files.
     if (currentScene === 'start') {
         drawStartScene();
     } else if (currentScene === 'mirror') {
@@ -307,4 +303,5 @@ function drawFade() {
     }
 
 }
+
 
