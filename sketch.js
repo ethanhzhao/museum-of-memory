@@ -78,7 +78,7 @@ function preload() {
     floorTexture = loadImage('./placeholdertexture.jpeg');
     wallTexture = loadImage('./images/mazewall.png');
 
-    finalImg = loadImage('/images/final.gif');
+    finalImg = loadImage('./images/final.gif');
 
     font = loadFont('./pixely.ttf')
 }
@@ -307,3 +307,4 @@ function drawFade() {
     }
 
 }
+
