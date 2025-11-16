@@ -120,7 +120,7 @@ function setupMirrorScene() {
     sceneObjects.push(new sceneObject(centerScreenX + 400, centerScreenY - 175, clothes5Img, clothes5_noImg, 'Clothes 5', 'Click to put on.\nJust put this one on.', '... ...', speechBubbleHeartbreak, false));
 
     //mirror object
-    sceneObjects.push(new sceneObject(centerScreenX, 250, mirrorImg, mirror_reflectImg, 'Mirror', null, null, null, true));
+    sceneObjects.push(new sceneObject(centerScreenX, 150, mirrorImg, mirror_reflectImg, 'Mirror', null, null, null, true));
 
     zoomStage = 0;
     currentZoom = 1.0;
@@ -304,4 +304,5 @@ function mouseClickedMirrorScene() {
         }
     }
 }
+
 
